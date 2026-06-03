@@ -6,15 +6,22 @@
 
     <title>Meu Pet Shop</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Arquivo do CSS -->
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-
     <header>
-      <!-- Logo / Nome -->
-      <h1>Meu pet-shop</h1>
+      <!-- Nome -->
+      <h1>Meu Pet Shop</h1>
 
       <div class="header_conteudo">
         <!-- Menu de navegação -->
@@ -35,59 +42,32 @@
     <!-- Hero -->
     <section class="hero" id="hero">
       <div class="hero_conteudo">
-        <h1>
-          Cuidando do seu pet <br />
-          com <span class="amarelo">carinho e qualidade</span>
-        </h1>
+        <h1>O melhor lugar pro seu pet ser feliz e saudável</h1>
 
         <p>
           Oferecemos uma variedade de produtos e serviços para garantir o
           bem-estar do seu animal de estimação.
         </p>
 
-        <div class="hero_acoes">
-          <button>Veja Mais</button>
+        <a href="#servicos" class="botao"> Veja Mais </a>
+        <div class="hero_imagem">
+          <img src="cachorro.png" alt="Cachorro feliz" />
         </div>
       </div>
     </section>
 
-    <!-- Serviços -->
-    <article class="servicos">
-      <img src="cachorro.png" alt="Cachorro feliz" />
-
-      <div class="servicos_texto">
-        <h2>Nossos Serviços</h2>
+    <!-- Sobre Nós -->
+    <section class="sobre">
+      <div class="sobre_texto">
+        <h2>Sobre Nós</h2>
 
         <p>
-          No Meu Pet-Shop, cuidamos do seu animal com carinho, atenção e
-          qualidade. Oferecemos banho e tosa, consultas veterinárias, vacinação
-          e diversos serviços especializados para garantir a saúde e felicidade
-          do seu pet.
+          No Meu Pet Shop, somos apaixonados por animais e dedicados a oferecer
+          o melhor para os nossos clientes peludos. Com anos de experiência no
+          mercado, nossa equipe é formada por profissionais qualificados que
+          cuidam do seu pet com amor e atenção.
         </p>
       </div>
-    </article>
-
-    <!-- Contato -->
-    <section class="contato">
-      <div class="contato_texto">
-        <h2>Entre em Contato</h2>
-
-        <p>
-          Estamos prontos para cuidar do seu pet com muito carinho. Fale conosco
-          para agendar consultas, banho e tosa ou tirar dúvidas.
-        </p>
-      </div>
-
-      <!-- Formulário -->
-      <form class="contato_form">
-        <input type="text" id="name" placeholder="Seu nome" required />
-
-        <input type="email" id="email" placeholder="Seu email" required />
-
-        <textarea id="message" placeholder="Sua mensagem" required></textarea>
-
-        <button type="submit">Enviar</button>
-      </form>
 
       <!-- Indicadores -->
       <div class="sobre_indicadores">
@@ -107,10 +87,68 @@
         </div>
       </div>
     </section>
+    <!-- Serviços -->
+    <article class="servicos" id="servicos">
+      <img src="cachorro.png" alt="Cachorro feliz" />
+
+      <div class="servicos_texto">
+        <h2>Nossos Serviços</h2>
+
+        <p>
+          No Meu Pet Shop, cuidamos do seu animal com carinho, atenção e
+          qualidade. Oferecemos banho e tosa, consultas veterinárias, vacinação
+          e diversos serviços especializados para garantir a saúde e felicidade
+          do seu pet.
+        </p>
+
+        <div class="cards_servicos">
+          <div class="card">
+            <h3>🛁 Banho e Tosa</h3>
+            <p>Cuidados completos para higiene e bem-estar.</p>
+          </div>
+
+          <div class="card">
+            <h3>🩺 Consultas</h3>
+            <p>Acompanhamento veterinário para seu pet.</p>
+          </div>
+
+          <div class="card">
+            <h3>🦴 Produtos</h3>
+            <p>Rações, brinquedos e acessórios de qualidade.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Contato -->
+    <section class="contato">
+      <div class="contato_texto">
+        <h2>Entre em Contato</h2>
+
+        <p>
+          Estamos prontos para cuidar do seu pet com muito carinho. Fale conosco
+          para agendar consultas, banho e tosa ou tirar dúvidas.
+        </p>
+      </div>
+
+      <!-- Formulário -->
+      <form class="contato_form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" placeholder="Seu nome" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Seu email" required />
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" placeholder="Sua mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
 
     <!-- Footer -->
     <footer>
-      <p>&copy; 2026 Meu pet-shop. Todos os direitos reservados.</p>
+      <p>&copy; 2026 Meu Pet Shop. Todos os direitos reservados.</p>
     </footer>
 
     <!-- Arquivo do JS -->
