@@ -234,18 +234,12 @@ footer {
   }
   
   .hero_imagem {
-    position: static;
-    margin-top: 20px;
+    display: none;
   }
 
   .hero {
     flex-direction: column;
     padding: 20px;
-  }
-
-  .hero_imagem img {
-    width: 220px;
-    max-width: 100%;
   }
 
   header {
