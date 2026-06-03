@@ -1,7 +1,7 @@
 function validateForm() {
-  const nameInput = document.getElementById("name").value;
-  const emailInput = document.getElementById("email").value;
-  const messageInput = document.getElementById("message").value;
+  const nameInput = document.getElementById("name").value.trim();
+  const emailInput = document.getElementById("email").value.trim();
+  const messageInput = document.getElementById("message").value.trim();
 
   // Campos vazios
   if (nameInput === "" || emailInput === "" || messageInput === "") {
